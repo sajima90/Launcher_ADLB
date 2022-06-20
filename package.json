@@ -4,7 +4,7 @@
     "version": "1.0.1",
     "description": "Launcher Mincraft custom (crack, premium)",
     "main": "src/app.js",
-    "author": "Luuxis",
+    "author": "Luuxis/Sajima",
     "url": "http://188.165.33.34:3456",
     "engines": {
         "node": "16.x.x"
