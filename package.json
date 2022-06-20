@@ -1,20 +1,17 @@
 {
-    "name": "Selvania-Launcher",
-    "preductname": "Selvania Launcher",
+    "name": "Art-dans-les-blocs",
+    "preductname": "Art dans les blocs",
     "version": "1.0.0",
     "description": "Launcher Mincraft custom (crack, premium)",
     "main": "src/app.js",
     "author": "Luuxis",
-    "url": "http://launcher.selvania.fr",
+    "url": "http://188.165.33.34:3456",
     "engines": {
         "node": "16.x.x"
     },
     "scripts": {
         "start": "env-cmd electron .",
-        "build": "node build.js",   
-        "build:win": "npm run build -- WINDOWS",
-        "build:mac": "npm run build -- MAC",
-        "build:linux": "npm run build -- LINUX",
+        "build": "node build.js",
         "dev": "nodemon --exec npm start"
     },
     "license": "CC0",
@@ -35,6 +32,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/luuxis/Selvania-Launcher.git"
+        "url": "git+https://github.com/sajima90/Launcher_ADLB.git"
     }
 }
