@@ -1,11 +1,11 @@
 {
     "name": "Art-dans-les-blocs",
     "preductname": "Art dans les blocs",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Launcher Mincraft ADLB",
     "main": "src/app.js",
     "author": "Luuxis/Sajima",
-    "url": "http://188.165.33.34:3456",
+    "url": "http://sajima.tk:3456/",
     "engines": {
         "node": "16.x.x"
     },

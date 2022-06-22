@@ -4,10 +4,12 @@
 @import "panels/settings.css";
 
 body {
+    cursor: crosshair;
     margin: 0;
     padding: 0;
     user-select: none;
-    background: linear-gradient(#00000097, #00000097), url("../images/background/light.jpg") black no-repeat center center scroll;
+    background: linear-gradient(#00000097, #00000097), url("../images/background/2742195.jpg");
+    background-position: bottom;
 }
 
 img {
@@ -17,7 +19,7 @@ img {
 
 .dragbar {
     position: fixed;
-    background: #00000080;
+    /* background: #00000080; */
     top: 0px;
     left: 0px;
     width: 100%;
@@ -44,7 +46,7 @@ img {
 
 .button-frame {
     position: relative;
-    display: table-cell;
+    display: table-caption;
     width: 30px;
     height: 26px;
     transition: color .2s, background-color .2s;
@@ -86,47 +88,67 @@ img {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 127px;
 }
 
-.dot {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    margin-left: 14px;
-    margin-top: 12px;
-    background: #ffffff;
+.spinner {
+    width: 40px;
+    height: 40px;
+    /* border: 4px solid #fcd779; */
+    border-top: 4px solid white;
     border-radius: 50%;
-    transform: translateX(0);
-    animation: dot 2.8s infinite;
+    left: 25%;
+    /* position: absolute; */
+    /* top: 80px; */
+    margin-left: -24px;
 }
 
-.dots {
-    transform: translateX(0);
-    margin-top: 12px;
-    margin-left: 31px;
-    animation: dots 2.8s infinite;
+.spinner {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1.2s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-transition-property: -moz-transform;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 1.2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    transition-property: transform;
+    animation-name: rotate;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-.dots span {
-    display: block;
-    float: left;
-    width: 16px;
-    height: 16px;
-    margin-left: 16px;
-    background: #ffffff;
-    border-radius: 50%;
-}
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
 
-@keyframes dot {
-    50% {
-        transform: translateX(96px);
+    to {
+        -webkit-transform: rotate(360deg);
     }
 }
 
-@keyframes dots {
-    50% {
-        transform: translateX(-31px);
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
 
