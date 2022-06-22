@@ -136,6 +136,13 @@ class Home {
                 progressBar.value = DL;
                 progressBar.max = totDL;
             })
+            
+            launch.on('estimated', (time) => {
+                let hours = Math.floor(time / 3600);
+                let minutes = Math.floor((time - hours * 3600) / 60);
+                let seconds = Math.floor(time - hours * 3600 - minutes * 60);
+                console.log(`${hours}h ${minutes}m ${seconds}s`);
+            })
 
             launch.on('speed', (speed) => {
                 console.log(`${(speed / 1067008).toFixed(2)} Mb/s`)

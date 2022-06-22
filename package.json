@@ -1,7 +1,7 @@
 {
     "name": "Art-dans-les-blocs",
     "preductname": "Art dans les blocs",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Launcher Mincraft ADLB",
     "main": "src/app.js",
     "author": "Luuxis/Sajima",
