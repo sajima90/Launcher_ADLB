@@ -18,7 +18,7 @@ let configBuild = {
         }],
     },
     nsis: {
-        oneClick: false,
+        oneClick: true,
         allowToChangeInstallationDirectory: false
     },
     mac: {

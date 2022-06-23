@@ -136,7 +136,7 @@ class Home {
                 progressBar.value = DL;
                 progressBar.max = totDL;
             })
-            
+
             launch.on('estimated', (time) => {
                 let hours = Math.floor(time / 3600);
                 let minutes = Math.floor((time - hours * 3600) / 60);
